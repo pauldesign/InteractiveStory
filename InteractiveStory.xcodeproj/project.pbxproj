@@ -12,6 +12,7 @@
 		CE06BE0E1D54FE1B00B94892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE06BE0C1D54FE1B00B94892 /* Main.storyboard */; };
 		CE06BE101D54FE1B00B94892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE06BE0F1D54FE1B00B94892 /* Assets.xcassets */; };
 		CE06BE131D54FE1B00B94892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE06BE111D54FE1B00B94892 /* LaunchScreen.storyboard */; };
+		CE06BE1B1D55359800B94892 /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06BE1A1D55359800B94892 /* InteractiveStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE06BE0F1D54FE1B00B94892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE06BE121D54FE1B00B94892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE06BE141D54FE1B00B94892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE06BE1A1D55359800B94892 /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CE06BE081D54FE1B00B94892 /* AppDelegate.swift */,
 				CE06BE0A1D54FE1B00B94892 /* ViewController.swift */,
+				CE06BE1A1D55359800B94892 /* InteractiveStory.swift */,
 				CE06BE0C1D54FE1B00B94892 /* Main.storyboard */,
 				CE06BE0F1D54FE1B00B94892 /* Assets.xcassets */,
 				CE06BE111D54FE1B00B94892 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE06BE1B1D55359800B94892 /* InteractiveStory.swift in Sources */,
 				CE06BE0B1D54FE1B00B94892 /* ViewController.swift in Sources */,
 				CE06BE091D54FE1B00B94892 /* AppDelegate.swift in Sources */,
 			);
