@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,18 +28,34 @@
                                     <segue destination="cNC-zx-CcJ" kind="show" identifier="startAdventure" id="BXb-4n-lCX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-uz-OFb">
+                                <rect key="frame" x="44" y="452" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1ya-ka-jJW"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Nly-uz-OFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="1QV-HJ-8Pj"/>
                             <constraint firstAttribute="trailing" secondItem="Dg6-aW-EYy" secondAttribute="trailing" id="GOh-hn-hHS"/>
                             <constraint firstItem="Dg6-aW-EYy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W43-q0-p8z"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eS6-ZG-DAm" secondAttribute="bottom" constant="48" id="dtS-dt-7Os"/>
+                            <constraint firstItem="Nly-uz-OFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eY9-7q-beC"/>
                             <constraint firstItem="Dg6-aW-EYy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hY3-pf-Oai"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dg6-aW-EYy" secondAttribute="bottom" id="hnm-LS-kEZ"/>
                             <constraint firstItem="eS6-ZG-DAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vVl-EB-HZj"/>
+                            <constraint firstItem="eS6-ZG-DAm" firstAttribute="top" secondItem="Nly-uz-OFb" secondAttribute="bottom" constant="40" id="xW7-4D-pVe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nly-uz-OFb" secondAttribute="trailing" constant="24" id="y4p-f3-PHd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fTA-gh-pDw"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="Nly-uz-OFb" id="SeG-Ac-Mbt"/>
+                        <outlet property="textFieldBottomConstraint" destination="xW7-4D-pVe" id="UqO-XN-PPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
